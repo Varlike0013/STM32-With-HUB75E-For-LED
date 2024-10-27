@@ -1,0 +1,128 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: alro Varlike, HP inc, LIC=LSNXV-PZFIK-30XNC-73W4Z-GP91V-6VZ13
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.41.0.0
+Toolchain Path:  E:\Users\Varlike\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.21.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+F:\STM32\VARLIKE\MDK-ARM\VARLIKE.uvprojx
+Project File Date:  10/23/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'E:\Users\Varlike\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'VARLIKE'
+Note: source file '../Core/Src/system_stm32h7xx.c' - object file renamed from 'VARLIKE\system_stm32h7xx.o' to 'VARLIKE\system_stm32h7xx_1.o'.
+../Core/Src/main.c(113): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  113 |         HC05_INFO("**********HC05ģ<BF><E9>ʵ<D1><E9>************");
+      |                                   ^~~~~~~~ ~~~~~~~~
+./User\bsp_hc05.h(36): note: expanded from macro 'HC05_INFO'
+   36 | #define HC05_INFO(fmt,arg...)           printf("<<-HC05-INFO->> "fmt"\n",##arg)
+      |                                                                  ^~~
+../Core/Src/main.c(117): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  117 |                 HC05_INFO("HC05ģ<BF><E9><BC><EC><B2><E2><D5><FD><B3><A3><A1><A3>");
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./User\bsp_hc05.h(36): note: expanded from macro 'HC05_INFO'
+   36 | #define HC05_INFO(fmt,arg...)           printf("<<-HC05-INFO->> "fmt"\n",##arg)
+      |                                                                  ^~~
+../Core/Src/main.c(122): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  122 |                 HC05_ERROR("HC05ģ<BF><E9><BC><EC><B2>ⲻ<D5><FD><B3><A3><A3><AC><C7><EB><BC><EC><B2><E9>ģ<BF><E9><D3>뿪<B7><A2><B0><E5><B5><C4><C1><AC><BD>ӣ<AC>Ȼ<BA><F3><B8><B4>λ<BF><AA><B7><A2><B0><E5><D6><D8><D0>²<E2><CA>ԡ<A3>");
+      |                                  ^~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~
+./User\bsp_hc05.h(37): note: expanded from macro 'HC05_ERROR'
+   37 | #define HC05_ERROR(fmt,arg...)          printf("<<-HC05-ERROR->> "fmt"\n",##arg)
+      |                                                                   ^~~
+../Core/Src/main.c(160): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  160 |         HC05_INFO("<B1><BE>ģ<BF><E9><C3><FB><D7><D6>Ϊ:%s ,ģ<BF><E9><D2><D1><U+05FC><B1><B8><BE><CD><D0><F7><A1><A3>",hc05_name);
+      |                    ^~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./User\bsp_hc05.h(36): note: expanded from macro 'HC05_INFO'
+   36 | #define HC05_INFO(fmt,arg...)           printf("<<-HC05-INFO->> "fmt"\n",##arg)
+      |                                                                  ^~~
+../Core/Src/main.c(176): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  176 |                                 HC05_INFO("<D5><FD><D4><DA>ɨ<C3><E8><C0><B6><D1><C0><C9>豸...");               
+      |                                            ^~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./User\bsp_hc05.h(36): note: expanded from macro 'HC05_INFO'
+   36 | #define HC05_INFO(fmt,arg...)           printf("<<-HC05-INFO->> "fmt"\n",##arg)
+      |                                                                  ^~~
+../Core/Src/main.c(279): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  279 |                                                                 HC05_INFO("<C9>豸<C3><FB><D7>ֱ<BB><B8><FC><B8><C4>Ϊ<A3><BA>%s",hc05_name);
+      |                                                                            ^~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+./User\bsp_hc05.h(36): note: expanded from macro 'HC05_INFO'
+   36 | #define HC05_INFO(fmt,arg...)           printf("<<-HC05-INFO->> "fmt"\n",##arg)
+      |                                                                  ^~~
+../Core/Src/main.c(286): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  286 |                                                                 HC05_ERROR("<B8><FC><B8><C4><C3><FB><D7><D6>ʧ<B0><DC>");
+      |                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+./User\bsp_hc05.h(37): note: expanded from macro 'HC05_ERROR'
+   37 | #define HC05_ERROR(fmt,arg...)          printf("<<-HC05-ERROR->> "fmt"\n",##arg)
+      |                                                                   ^~~
+../Core/Src/main.c(318): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  318 |                                                         HC05_INFO("<C9>豸<C3><FB><D7>ֱ<BB><B8><FC><B8><C4>Ϊ<A3><BA>%s",hc05_name);
+      |                                                                    ^~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+./User\bsp_hc05.h(36): note: expanded from macro 'HC05_INFO'
+   36 | #define HC05_INFO(fmt,arg...)           printf("<<-HC05-INFO->> "fmt"\n",##arg)
+      |                                                                  ^~~
+../Core/Src/main.c(325): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  325 |                                                         HC05_ERROR("<B8><FC><B8><C4><C3><FB><D7><D6>ʧ<B0><DC>");
+      |                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+./User\bsp_hc05.h(37): note: expanded from macro 'HC05_ERROR'
+   37 | #define HC05_ERROR(fmt,arg...)          printf("<<-HC05-ERROR->> "fmt"\n",##arg)
+      |                                                                   ^~~
+../Core/Src/main.c(354): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  354 |                                                 HC05_INFO("<C9>豸<C3><FB><D7>ֱ<BB><B8><FC><B8><C4>Ϊ<A3><BA>%s",hc05_name);
+      |                                                            ^~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+./User\bsp_hc05.h(36): note: expanded from macro 'HC05_INFO'
+   36 | #define HC05_INFO(fmt,arg...)           printf("<<-HC05-INFO->> "fmt"\n",##arg)
+      |                                                                  ^~~
+../Core/Src/main.c(361): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  361 |                                                 HC05_ERROR("<B8><FC><B8><C4><C3><FB><D7><D6>ʧ<B0><DC>");
+      |                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+./User\bsp_hc05.h(37): note: expanded from macro 'HC05_ERROR'
+   37 | #define HC05_ERROR(fmt,arg...)          printf("<<-HC05-ERROR->> "fmt"\n",##arg)
+      |                                                                   ^~~
+11 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=31764 RO-data=5300 RW-data=48 ZI-data=45152  
+FromELF: creating hex file...
+"VARLIKE\VARLIKE.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.4.0.0.pack
+                Keil::STM32H7xx_DFP@4.0.0
+                STMicroelectronics STM32H7 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_VARLIKE
+  E:/Users/Varlike/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
